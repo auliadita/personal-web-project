@@ -1,0 +1,106 @@
+<html>
+
+    <head>
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        <center>
+        <nav style=
+                "background: rgb(236, 232, 232); 
+                position: relative;
+                padding-left: 10%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                box-shadow: 0 0 5px 0 gray;
+                ">
+            <!-- ul : unorder list -> daftar yang tidak berurutan
+            li : list -> daftar 
+            inline -> merubah element yang sebelumnya kolom menjadi baris-->
+            <div style="display: flex; align-items: center;">
+                <img src="assets/dw.png" style="margin-right: 40px; height: 30px;">
+                <div style="display: flex;">
+                    <a href= "index1.html" style="margin-right: 40px; color: #ec3d37;">Home</a>
+                    <a style="margin-right: 40px;">Blog</a>
+                    <a href="https://www.instagram.com/auliaditaaa_/" style="text-decoration: none; color: black;"
+                    target="_blank">Follow Instagram</a>
+                </div>
+            </div>
+            <div style="position: absolute; 
+                        right: 5%; top: 10; 
+                        transform: translate(-50%, -5%);">
+                <button style="
+                   background-color: #ec3d37; 
+                    color: white;
+                    font-size: 13px;
+                    border: none; 
+                    border-radius: 5px; 
+                    height: 30px; 
+                    width: 120px;
+                    cursor: pointer;
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    box-shadow: 0 0 10px 0 gray;">
+                    <a href="contact-form.html" style="text-decoration: none; color: white;">Contact Me</a>
+                </button>
+            </div>
+        </nav>
+        
+            <div style="
+                width: 400px;
+                        ">
+            <form style="margin-top: 50px;">
+            
+                <div style="text-align: left; margin-bottom: 20px;">
+                    <label style="font-size: 20px;">Name</label> 
+                    <input style="width: 100%; padding: 10px; border-radius: 5px; background-color: rgb(233, 224, 224); border: 0;"
+                            id="input-name" type="text">
+                </div>
+
+                <div style="text-align: left; margin-bottom: 20px;">
+                    <label style="font-size: 20px;">Email</label>
+                    <input style="width: 100%; padding: 10px; border-radius: 5px; background-color: rgb(233, 224, 224); border: 0;"
+                            id="input-email" type="text">
+                </div>
+
+                <div style="text-align: left; margin-bottom: 20px;">
+                    <label style="font-size: 20px;">Phone Number</label>
+                    <input style="width: 100%; padding: 10px; border-radius: 5px; background-color: rgb(233, 224, 224); border: 0;"
+                            id="input-phone" type="text">
+                </div>
+
+                <div style="text-align: left; margin-bottom: 20px;">
+                <label style="font-size: 20px;">Subject</label>
+                <select style="width: 100%; padding: 10px; border-radius: 5px; background-color: rgb(233, 224, 224); border: 0;"
+                            id="input-subject">
+                    <option></option>
+                    <option style="font-weight: bold;">Let's work</option>
+                    <option style="font-weight: bold;">Let's eat</option>
+                    <option style="font-weight: bold;">Let's drink</option>
+                </select>
+                </div>
+
+                <div style="text-align: left; margin-bottom: 20px;">
+                <label style="font-size: 20px;">Your Message</label>
+                <textarea style="width: 100%; padding: 30px; border-radius: 5px; background-color: rgb(233, 224, 224); border: 0;"
+                        id="input-message" type="text"></textarea>
+                </div>
+
+                <div style="
+                text-align: left; margin-bottom: 100px;">
+                        <button onclick="submitForm()" style="width: 100px; height: 40px; border-radius: 5px; background-color: hsl(22, 100%, 50%);
+                     font-size: 18px; border: 0; color: rgb(233, 224, 224);">Submit</button>
+                </div>
+
+            </form>
+            </div>    
+            </center>      
+        <script src="index.js"></script>
+
+    </body>
+
+</html>
